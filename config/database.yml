@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  url: postgres://restapi_zddj_user:kSxRbX38ocnaPFP1BpTd1cWbV8sDWK5K@dpg-ck0ni9j6fquc738g7up0-a.oregon-postgres.render.com/restapi_zddj
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  port: 5432
+  username: restapi_zddj_user
+  password: kSxRbX38ocnaPFP1BpTd1cWbV8sDWK5K
+
+development:
+  <<: *default
+  database: restapi_zddj
+
+test:
+  <<: *default
+  database: restapi_zddj
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
