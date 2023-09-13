@@ -6,38 +6,38 @@ run rails server
 The API will be accessible at http://localhost:3000/api
 ## Usage
 To interact with the API, you can use tools like Postman or make HTTP requests using a client library.
-## Endpoints
-GET /api
+## Endpoints For postman for deployed app
+GET https://rest-ziul.onrender.com/api
 Retrieve a list of all people.
 
-POST /api
+POST https://rest-ziul.onrender.com/api
 Create a new person.
 
-GET /api/:id
+GET https://rest-ziul.onrender.com/api/id
 Retrieve details of a specific person by ID.
 
-PUT /api/:id
+PUT https://rest-ziul.onrender.com/api/id
 Update details of a specific person by ID.
 
-DELETE /api/:id
+DELETE https://rest-ziul.onrender.com/api/id
 Delete a specific person by ID.
 
-GET /api/find_by_name/:name
+GET https://rest-ziul.onrender.com/api/find_by_name/name
 Retrieve details of a specific person by name.
 
-POST /api/find_by_name/:name
+POST https://rest-ziul.onrender.com/api/find_by_name/name
 Create a new person with a specific name.
 
-PUT /api/find_by_name/:name
+PUT https://rest-ziul.onrender.com/api/find_by_name/name
 Update details of a specific person by name.
 
-DELETE /api/find_by_name/:name
+DELETE https://rest-ziul.onrender.com/api/find_by_name/name
 Delete a specific person by name.
 
 ## Examples
 Example Request
 
- POST http://localhost:3000/api
+ POST https://rest-ziul.onrender.com/api
  
   'Content-Type: application/json' -d 
   '{"person": {"name": "John Doe", "age": 30}}'
