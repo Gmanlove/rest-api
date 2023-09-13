@@ -24,9 +24,9 @@ Seed the database with sample data (optional):
 rails db:seed
 
 ## Dependencies
-Ruby 3.0.0
-Rails 7.0.8
-PostgreSQL
+. Ruby 3.0.0
+. Rails 7.0.8
+. PostgreSQL
 ## Configuration
 The API uses environment variables for configuration. Create a .env file in the project root and add the following:
 
